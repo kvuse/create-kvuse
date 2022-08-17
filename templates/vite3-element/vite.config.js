@@ -21,7 +21,7 @@ export default ({ mode }) => defineConfig({
       },
     }),
   ],
-  base: mode === 'production' ? '/static' : '/',
+  base: mode === 'production' ? '/static/' : '/',
   build: {
     outDir: mode === 'production' ? 'static' : 'dist',
     chunkSizeWarningLimit: 1500,
@@ -48,20 +48,6 @@ export default ({ mode }) => defineConfig({
       scss: {
         additionalData: '@import "@/styles/common.scss";',
       },
-    },
-    postcss: {
-      plugins: [
-        {
-          postcssPlugin: 'internal:charset-removal',
-          AtRule: {
-            charset: (atRule) => {
-              if (atRule.name === 'charset') {
-                atRule.remove();
-              }
-            },
-          },
-        },
-      ],
     },
   },
 });
