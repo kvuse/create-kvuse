@@ -1,6 +1,6 @@
 {
   "name": "create-kvuse",
-  "version": "0.1.1",
+  "version": "0.1.7",
   "type": "module",
   "author": "wenxin",
   "license": "ISC",
@@ -10,7 +10,7 @@
   },
   "files": [
     "index.js",
-    "template-*"
+    "templates"
   ],
   "main": "index.mjs",
   "keywords": [
@@ -20,7 +20,8 @@
   ],
   "scripts": {
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "clean": "rm -rf node_modules **/*/node_modules"
   },
   "repository": {
     "type": "git",
@@ -28,14 +29,12 @@
     "directory": "packages/create-kvuse"
   },
   "dependencies": {
-    "kolorist": "^1.5.1",
-    "minimist": "^1.2.6",
     "prompts": "^2.4.2",
     "validate-npm-package-name": "^4.0.0",
     "zx": "^7.0.8"
   },
   "devDependencies": {
-    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint": "^8.2.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.2",
     "vitest": "^0.22.0"

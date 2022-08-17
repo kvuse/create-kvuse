@@ -1,8 +1,9 @@
 import {
-  fs, argv, chalk, path, $,
+  fs, argv, chalk, $, path,
 } from 'zx';
 import prompts from 'prompts';
 import validate from 'validate-npm-package-name';
+import { fileURLToPath } from 'url';
 
 // 判断是否快捷创建
 let templateType;
@@ -38,7 +39,12 @@ if (!validate(targetDir)?.validForNewPackages) {
   console.log(chalk.red('📌 目录已经存在'));
 } else {
   // copy template
-  const src = path.resolve(__dirname, `./templates/${templateType}`);
+  const src = path.resolve(
+    fileURLToPath(import.meta.url),
+    '..',
+    `templates/${templateType}`,
+  );
+
   console.log(`⏳ Creating project in ${chalk.yellow(src)}.`);
   await fs.copy(src, targetDir);
   // edit package.json name
