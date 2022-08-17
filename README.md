@@ -23,21 +23,21 @@ pnpm create kvuse my-project
 
 ```bash
 # NPM 
-npm create kvuse@latest my-project --template element-plus
+npm create kvuse@latest my-project --template vite-element
 
 # YARN
-yarn create kvuse my-project --template element-plus
+yarn create kvuse my-project --template vite-element
 
 #PNPM
-pnpm create kvuse my-project --template element-plus
+pnpm create kvuse my-project --template vite-element
 ```
 
 模板支持
 
-- `vite-element`
-- `vite3-element`
-- `vite-vant`
-- `vite-uniapp`
+- `vite-element`  vite@2.0 + elementPlus + pinia
+- `vite3-element` vite + elementPlus + pinia
+- `vite-vant`     vite + vant@4.0 + pinia
+- `vite-uniapp`   vite@2.0 + vue@3.2 + uniapp + pinia
   
 ## 安装依赖
 
