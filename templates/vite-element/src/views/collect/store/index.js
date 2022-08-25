@@ -4,4 +4,5 @@ export const useCollectStore = defineStore('collect', {
   state: () => ({}),
   getters: {},
   actions: {},
+  persist: true,
 });

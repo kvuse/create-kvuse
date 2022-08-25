@@ -12,4 +12,5 @@ export const useAboutStore = defineStore('about', {
       this.details = data;
     },
   },
+  persist: true, // 设置持久化
 });

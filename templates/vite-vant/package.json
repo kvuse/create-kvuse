@@ -9,7 +9,7 @@
 		"stylelint": "stylelint **/*.vue --fix"
 	},
 	"dependencies": {
-		"axios": "^0.27.2",
+		"@kvuse/core": "^1.0.7",
 		"pinia": "^2.0.18",
 		"pinia-plugin-persistedstate": "^2.1.1",
 		"postcss-px-to-viewport": "^1.1.1",

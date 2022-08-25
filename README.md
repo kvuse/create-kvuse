@@ -35,8 +35,8 @@ pnpm create kvuse my-project --template vite-element
 模板支持
 
 - `vite-element`  vite@2.0 + elementPlus + pinia
-- `vite3-element` vite + elementPlus + pinia
-- `vite-vant`     vite + vant@4.0 + pinia
+- `vite3-element` vite@3.0 + elementPlus + pinia
+- `vite-vant`     vite@3.0 + vant@4.0 + pinia
 - `vite-uniapp`   vite@2.0 + vue@3.2 + uniapp + pinia
   
 ## 安装依赖

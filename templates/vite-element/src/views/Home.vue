@@ -31,8 +31,8 @@ const handleSelect = (key) => {
 };
 
 const menuList = ref([
-  { name: '前台', path: 'collect' },
   { name: '关于', path: 'about' },
+  { name: '前台', path: 'collect' },
 ]);
 
 // 是否开发环境
