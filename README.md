@@ -9,12 +9,6 @@
 > pnpm create kvuse 文件名
 
 ```bash
-# NPM 
-npm create kvuse@latest my-project
-
-# YARN
-yarn create kvuse my-project
-
 #PNPM
 pnpm create kvuse my-project
 ```
@@ -22,12 +16,6 @@ pnpm create kvuse my-project
 ## 指定模板创建(快速创建)
 
 ```bash
-# NPM 
-npm create kvuse@latest my-project --template vite-element
-
-# YARN
-yarn create kvuse my-project --template vite-element
-
 #PNPM
 pnpm create kvuse my-project --template vite-element
 ```

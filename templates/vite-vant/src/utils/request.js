@@ -15,6 +15,13 @@ const { $api } = useRequest({
   errorResponse(error) {
     console.log('error: ', error);
   },
+  // 报错提示
+  errorHandler(message) {
+    if (!message) return;
+    // 弹出错误信息
+    closeToast();
+    showToast({ message, type: 'fail' });
+  },
 });
 
 export default $api;
