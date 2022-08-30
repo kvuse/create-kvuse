@@ -23,38 +23,39 @@ else {
       initial: 0,
     },
   ]);
-  console.log('templateName: ', templateName);
   templateType = templateName;
 }
 
-const targetDir = argv._[0];
-const isExists = await fs.existsSync(targetDir);
-const nodeVersion = await $`node -v`;
-const MIN_VERSION = 'v14.18.0';
-if (!validate(targetDir)?.validForNewPackages) {
-  console.log(chalk.red(`📌 不规范的项目名称: ${targetDir}`));
-} else if (nodeVersion.stdout < MIN_VERSION) {
-  console.log(chalk.red('📌 Vite 需要 Node.js 版本 14.18+，16+,请升级Node.js版本！'));
-} else if (isExists) {
-  console.log(chalk.red('📌 目录已经存在'));
-} else {
-  // copy template
-  const src = path.resolve(
-    fileURLToPath(import.meta.url),
-    '..',
-    `templates/${templateType}`,
-  );
+if (templateType) {
+  const targetDir = argv._[0];
+  const isExists = await fs.existsSync(targetDir);
+  const nodeVersion = await $`node -v`;
+  const MIN_VERSION = 'v14.18.0';
+  if (!validate(targetDir)?.validForNewPackages) {
+    console.log(chalk.red(`📌 不规范的项目名称: ${targetDir}`));
+  } else if (nodeVersion.stdout < MIN_VERSION) {
+    console.log(chalk.red('📌 Vite 需要 Node.js 版本 14.18+，16+,请升级Node.js版本！'));
+  } else if (isExists) {
+    console.log(chalk.red('📌 目录已经存在'));
+  } else {
+    // copy template
+    const src = path.resolve(
+      fileURLToPath(import.meta.url),
+      '..',
+      `templates/${templateType}`,
+    );
 
-  console.log(`⏳ Creating project in ${chalk.yellow(src)}.`);
-  await fs.copy(src, targetDir);
-  // edit package.json name
-  const pkg = fs.readJsonSync(path.resolve(process.cwd(), `${targetDir}/package.json`));
-  pkg.name = targetDir;
-  await fs.writeFileSync(path.resolve(process.cwd(), `${targetDir}/package.json`), JSON.stringify(pkg, null, 2));
+    console.log(`⏳ Creating project in ${chalk.yellow(src)}.`);
+    await fs.copy(src, targetDir);
+    // edit package.json name
+    const pkg = fs.readJsonSync(path.resolve(process.cwd(), `${targetDir}/package.json`));
+    pkg.name = targetDir;
+    await fs.writeFileSync(path.resolve(process.cwd(), `${targetDir}/package.json`), JSON.stringify(pkg, null, 2));
 
-  console.log(`✨  Successfully created project ${chalk.yellow(targetDir)}.\n\n`);
-  console.log('👉  Get started with the following commands:');
-  console.log(chalk.cyan(`${chalk.gray('$')} cd ${targetDir}`));
-  console.log(chalk.cyan(`${chalk.gray('$')} pnpm install \n`));
-  console.log(chalk.cyan(`🚀 ${chalk.bgCyanBright('started project：')} pnpm dev`));
+    console.log(`✨  Successfully created project ${chalk.yellow(targetDir)}.\n\n`);
+    console.log('👉  Get started with the following commands:');
+    console.log(chalk.cyan(`${chalk.gray('$')} cd ${targetDir}`));
+    console.log(chalk.cyan(`${chalk.gray('$')} pnpm install \n`));
+    console.log(chalk.cyan(`🚀 ${chalk.bgCyanBright('started project：')} pnpm dev`));
+  }
 }
