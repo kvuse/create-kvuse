@@ -1,0 +1,6 @@
+{
+  "extends": ["@kvuse/eslint-config", "./.eslintrc-auto-import.json"],
+  "rules": {
+    "import/prefer-default-export": "off"
+  }
+}

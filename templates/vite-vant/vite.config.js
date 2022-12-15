@@ -49,12 +49,6 @@ export default ({ mode }) => defineConfig({
     },
   },
   css: {
-    preprocessorOptions: {
-      // 引入公用的样式
-      scss: {
-        additionalData: '@import "@/styles/common.scss";',
-      },
-    },
     postcss: {
       plugins: [
         postcsspxtoviewport({

@@ -4,7 +4,8 @@ import * as ElIconModules from '@element-plus/icons-vue';
 import router from './router';
 import store from './store';
 import App from './App.vue';
-import './styles/normalize.css';
+// 常用的class样式 https://www.npmjs.com/package/kucss
+import 'kucss/src/index.css';
 import 'element-plus/dist/index.css';
 // 修改element主题颜色 https://juejin.cn/post/7128226836751843358
 

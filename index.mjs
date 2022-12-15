@@ -17,6 +17,7 @@ else {
       choices: [
         { title: 'vite-elementPlus', description: 'vite2 + elementPlus + pinia', value: 'vite-element' },
         { title: 'vite3-elementPlus', description: 'vite3 + elementPlus + pinia', value: 'vite3-element' },
+        { title: 'vite4-elementPlus', description: 'vite4 + elementPlus + pinia', value: 'vite4-element' },
         { title: 'vite-vant', description: 'vite3 + vant + pinia', value: 'vite-vant' },
         { title: 'vite-uniapp', description: 'vite2 + uniapp + pinia', value: 'vite-uniapp' },
       ],

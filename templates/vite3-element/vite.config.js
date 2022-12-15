@@ -42,12 +42,4 @@ export default ({ mode }) => defineConfig({
       '@': resolve(__dirname, 'src/'),
     },
   },
-  css: {
-    preprocessorOptions: {
-      // 引入公用的样式
-      scss: {
-        additionalData: '@import "@/styles/common.scss";',
-      },
-    },
-  },
 });
