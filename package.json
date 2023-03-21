@@ -1,6 +1,6 @@
 {
   "name": "create-kvuse",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "type": "module",
   "author": "wenxin",
   "license": "ISC",
@@ -9,7 +9,7 @@
     "ckv": "index.mjs"
   },
   "files": [
-    "index.js",
+    "index.mjs",
     "templates"
   ],
   "main": "index.mjs",
