@@ -56,6 +56,7 @@ export default ({ mode }) => defineConfig({
           viewportWidth: 375,
           propList: ['*'],
           selectorBlackList: ['van'],
+          // exclude: [/node_modules\/vant/], // 排除 vant 相关文件 如果viewportWidth是750添加这行
         }),
       ],
     },

@@ -22,7 +22,7 @@ pnpm create kvuse my-project --template vite-element
 
 模板支持
 
-- `vite-element`  vite@2.0 + elementPlus + pinia
+- `vue2-element`  vue@2.0 + elementUI + vuex
 - `vite3-element` vite@3.0 + elementPlus + pinia
 - `vite4-element` vite@4.0 + elementPlus + pinia
 - `vite-vant`     vite@3.0 + vant@4.0 + pinia
