@@ -1,9 +1,10 @@
 {
   "name": "create-kvuse",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "type": "module",
   "author": "wenxin",
   "license": "ISC",
+  "homepage": "https://github.com/kvuse/create-kvuse",
   "bin": {
     "create-kvuse": "index.mjs",
     "ckv": "index.mjs"
@@ -22,11 +23,6 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "clean": "rm -rf node_modules **/*/node_modules"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kvuse/kvuse.git",
-    "directory": "packages/create-kvuse"
   },
   "dependencies": {
     "prompts": "^2.4.2",
