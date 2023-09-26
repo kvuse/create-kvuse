@@ -84,6 +84,7 @@
     "defineLoader": true,
     "definePage": true,
     "toValue": true,
-    "rouerView": true
+    "rouerView": true,
+    "WritableComputedRef": true
   }
 }
