@@ -46,9 +46,7 @@ export default ({ mode }) => defineConfig({
     port: 8086, // 配置启用的端口号
     proxy: {
       '/erp': {
-        // target: 'http://qywx.frps.deeptel.com.cn', // 测试
-        // target: 'http://192.168.9.42:8080', // 测试
-        target: 'https://retail.deeptel.com.cn', // 测试
+        // target: 'http://xxx.com.cn', // 测试
         changeOrigin: true,
       },
     },

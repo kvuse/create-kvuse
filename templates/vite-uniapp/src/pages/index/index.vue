@@ -1,5 +1,5 @@
 <template>
-  <view class="content">
+  <view class="content flexs-center">
     <image class="logo" src="/static/logo.png"></image>
     <view class="text-area">
       <text class="title">{{ title }}</text>
@@ -27,13 +27,6 @@ const title = ref('123');
 </script>
 
 <style>
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .logo {
   height: 200rpx;
   width: 200rpx;

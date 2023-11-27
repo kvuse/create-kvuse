@@ -85,6 +85,9 @@
     "definePage": true,
     "toValue": true,
     "rouerView": true,
-    "WritableComputedRef": true
+    "WritableComputedRef": true,
+    "ExtractDefaultPropTypes": true,
+    "ExtractPropTypes": true,
+    "ExtractPublicPropTypes": true
   }
 }

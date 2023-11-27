@@ -8,7 +8,7 @@ export default defineConfig({
     uni(),
     AutoImport({
       imports: [
-        'vue', 'pinia',
+        'vue', 'pinia', 'uni-app',
       ],
       dts: './auto-import.d.ts',
       eslintrc: {

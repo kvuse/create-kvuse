@@ -2,7 +2,7 @@
 
 快速创建项目
 
-> 📌  Vite 需要 Node.js 版本 14.18+，16+,请升级Node.js版本！
+> 📌  Vite 需要 Node.js 版本 18+，20+， 请升级Node.js版本！
 
 ## 使用
 
@@ -26,7 +26,7 @@ pnpm create kvuse my-project --template vite-element
 - `vite-element` vite + elementPlus + pinia + eslint + stylelint
 - `vite-pages` vite + elementPlus + pinia + unplugin-vue-router + eslint + stylelint
 - `vite-vant`     vite + vant@4.0 + pinia + eslint + stylelint
-- `vite-uniapp`   vite@2.0 + vue@3.2 + uniapp + pinia + eslint + stylelint
+- `vite-uniapp`   vite@4.0 + vue@3.2 + uniapp + pinia + eslint + stylelint
   
 ## 安装依赖
 

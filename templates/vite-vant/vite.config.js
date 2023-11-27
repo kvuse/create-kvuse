@@ -5,9 +5,9 @@ import vue from '@vitejs/plugin-vue';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import { VantResolver } from 'unplugin-vue-components/resolvers';
-import postcsspxtoviewport from 'postcss-px-to-viewport';
+import postcsspxtoviewport8plugin from 'postcss-px-to-viewport-8-plugin';
 
-const { resolve } = require('path');
+import path from 'path';
 
 // 详情 https://juejin.cn/post/6994310850290909214
 export default ({ mode }) => defineConfig({
@@ -45,13 +45,13 @@ export default ({ mode }) => defineConfig({
   resolve: {
     // 设置别名
     alias: {
-      '@': resolve(__dirname, 'src/'),
+      '@': path.resolve(__dirname, 'src/'),
     },
   },
   css: {
     postcss: {
       plugins: [
-        postcsspxtoviewport({
+        postcsspxtoviewport8plugin({
           unitToConvert: 'px',
           viewportWidth: 375,
           propList: ['*'],
