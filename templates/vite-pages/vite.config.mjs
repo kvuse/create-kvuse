@@ -51,6 +51,7 @@ export default ({ mode }) => defineConfig({
     host: 'shop1.deeptel.com.cn',
     // https: true,
     port: 8086, // 配置启用的端口号
+    open: true,
     proxy: {
       '/api': {
         target: 'https://api.com.cn', // 测试

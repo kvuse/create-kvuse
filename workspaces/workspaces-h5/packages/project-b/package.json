@@ -1,0 +1,27 @@
+{
+  "name": "membercard-fans",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --emptyOutDir",
+    "serve": "vite preview",
+    "clean": "rm -rf node_modules **/*/node_modules",
+    "stylelint": "stylelint **/*.vue --fix",
+    "ci": "pnpm install && pnpm build"
+  },
+  "dependencies": {
+    "@kvuse/core": "^1.2.4",
+    "kucss": "^1.1.8",
+    "pinia": "^2.1.7",
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "postcss-px-to-viewport-8-plugin": "^1.2.3",
+    "vant": "^4.8.4",
+    "vue": "^3.4.19",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.1.3"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@common/components",
+  "version": "1.0.0",
+  "description": "共用的组件",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@kvuse/core": "^1.2.7",
+    "element-plus": "^2.6.0",
+    "vue": "^3.4.21"
+  }
+}

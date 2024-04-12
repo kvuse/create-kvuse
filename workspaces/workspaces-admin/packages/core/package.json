@@ -1,0 +1,12 @@
+{
+  "name": "@common/core",
+  "version": "1.0.0",
+  "description": "共用的方法",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8"
+  }
+}

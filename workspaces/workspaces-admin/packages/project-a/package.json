@@ -1,0 +1,33 @@
+{
+  "name": "project-a",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf node_modules **/*/node_modules",
+    "lint": "eslint **/*.vue --fix",
+    "stylelint": "stylelint **/*.vue --fix",
+    "ci": "pnpm i && pnpm build"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@kvuse/components": "1.5.7",
+    "@kvuse/core": "^1.2.7",
+    "@vueuse/core": "^10.9.0",
+    "element-plus": "^2.6.3",
+    "kucss": "^1.1.8",
+    "pinia": "^2.1.7",
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "socket.io-client": "^4.7.5",
+    "vue": "^3.4.21",
+    "vue-draggable-plus": "^0.4.0",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.2.8"
+  }
+}

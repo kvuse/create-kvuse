@@ -1,0 +1,24 @@
+{
+  "name": "workspaces-admin",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf node_modules **/*/node_modules",
+    "lint": "eslint **/*.vue --fix",
+    "stylelint": "stylelint **/*.vue --fix"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.1",
+    "@kvuse/commitlint-config": "^1.2.2",
+    "@kvuse/eslint-config": "^1.0.5",
+    "@kvuse/stylelint-config": "^1.0.2",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "eruda": "^3.0.1",
+    "stylelint": "^15.11.0",
+    "unplugin-auto-import": "^0.17.5",
+    "unplugin-vue-components": "^0.26.0",
+    "vite-plugin-mkcert": "^1.17.5",
+    "vite-plugin-vue-devtools": "7.0.27"
+  }
+}

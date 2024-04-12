@@ -38,6 +38,16 @@ async function getTemplateType() {
           description: 'vite + uniapp + pinia',
           value: 'vite-uniapp',
         },
+        {
+          title: 'vite-workspaces-admin',
+          description: 'vite + elementPlus + pinia + pnpm workspace',
+          value: 'workspaces-admin',
+        },
+        {
+          title: 'vite-workspaces-h5',
+          description: 'vite + vant + pinia + pnpm workspace',
+          value: 'workspaces-h5',
+        },
       ],
       initial: 0,
     },
@@ -46,7 +56,9 @@ async function getTemplateType() {
 }
 
 async function copyTemplate(templateType, targetDir) {
-  const src = path.resolve(fileURLToPath(import.meta.url), '..', `templates/${templateType}`);
+  console.log('templateType: ', templateType);
+  const relovePath = templateType.includes('workspaces') ? `workspaces/${templateType}` : `templates/${templateType}`;
+  const src = path.resolve(fileURLToPath(import.meta.url), '..', relovePath);
 
   console.log(`⏳ Creating project in ${chalk.yellow(src)}.`);
   await fs.copy(src, targetDir);

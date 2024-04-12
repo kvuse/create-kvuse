@@ -27,6 +27,8 @@ pnpm create kvuse my-project --template vite-element
 - `vite-pages` vite + elementPlus + pinia + unplugin-vue-router + eslint + stylelint
 - `vite-vant`     vite + vant@4.0 + pinia + eslint + stylelint
 - `vite-uniapp`   vite@4.0 + vue@3.2 + uniapp + pinia + eslint + stylelint
+- `vite-workspaces-admin`   vite + elementPlus + pinia + pnpm workspace
+- `vite-workspaces-h5`   vite + vant + pinia + pnpm workspace
   
 ## 安装依赖
 
