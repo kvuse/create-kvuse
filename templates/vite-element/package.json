@@ -27,7 +27,7 @@
     "@kvuse/stylelint-config": "^1.0.2",
     "@vitejs/plugin-vue": "^5.0.4",
     "sass": "^1.75.0",
-    "stylelint": "^16.3.1",
+    "stylelint": "^15.11.0",
     "unplugin-auto-import": "^0.17.5",
     "unplugin-vue-components": "^0.26.0",
     "vite": "^5.2.8"
