@@ -1,3 +1,3 @@
 {
-  "extends": ["@kvuse/eslint-config"]
+  "extends": ["@kvuse/eslint-config-vue2"]
 }
